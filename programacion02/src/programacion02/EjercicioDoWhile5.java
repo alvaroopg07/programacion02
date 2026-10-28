@@ -13,19 +13,24 @@ public class EjercicioDoWhile5 {
 		int num2;
 		int resultadoUser;
 		int resultadoReal;
-		int aciertos=0;
+		int aciertos = 0;
 
 		do {
 			num1 = rm.nextInt(100) + 1;
 			num2 = rm.nextInt(100) + 1;
 			resultadoReal = num1 + num2;
-			System.out.printf("Cuanto es %d + %d ?", num1, num2);
+			System.out.printf("Cuanto es %d + %d ? \n", num1, num2);
 			resultadoUser = sc.nextInt();
 
-		} while (resultadoReal==resultadoUser);
+			if (resultadoReal == resultadoUser) {
+				aciertos++;
+			}else {
+				System.out.println("¡Fallaste! El resultado correcto era " + resultadoReal);
+				System.out.printf("Has realizado %d operaciones correctamente.\n", aciertos);
 
-		System.out.println("¡Fallaste! El resultado correcto era " + resultadoReal);
-		System.out.printf("Has realizado %d operaciones correctamente.\n", aciertos);
+			}
+		} while (resultadoReal == resultadoUser);
+
 		sc.close();
 	}
 
