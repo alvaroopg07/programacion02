@@ -14,14 +14,14 @@ public class EjercicioFor7 {
 		
 		System.out.println("Introduce un numero positivo");
 		int num=sc.nextInt();
-		double factorial=1;
+		int factorial=1;
 		
 		for (int i = num; i >0; i--) {
 			factorial=factorial*i;
 			
 		}
 		
-		System.out.printf("El factorial de %d es de: %.2f", num,factorial);
+		System.out.printf("El factorial de %d es de: %d", num,factorial);
 
 		
 		
