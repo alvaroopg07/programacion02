@@ -2,7 +2,7 @@ package boletin21Bucles;
 
 import java.util.Scanner;
 
-public class Ejercico3 {
+public class Ejercicio3 {
 
 	public static void main(String[] args) {
 		/*
