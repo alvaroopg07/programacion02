@@ -1,4 +1,4 @@
-package boletin24;
+package boletin24Funciones;
 
 import java.util.Random;
 import java.util.Scanner;
