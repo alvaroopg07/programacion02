@@ -45,6 +45,24 @@ public class ActividadFunciones {
 		}
 	}
 
+	public static boolean numerosAfortunados(int numero) {
+		int buenaSuerte = 0;
+		int malaSuerte = 0;
+
+		while (numero > 0) {
+			int digito = numero % 10;
+
+			switch (digito) {
+			case 3, 7, 8, 9 -> buenaSuerte++;
+			default -> malaSuerte++;
+			}
+
+			numero = numero / 10;
+		}
+
+		return buenaSuerte > malaSuerte;
+	}
+
 	public static String validadorPassword(String password) {
 		Scanner sc = new Scanner(System.in);
 
